@@ -1,8 +1,8 @@
 from faceduino import Arduino, Facebook
 
-ARDUINO_PORT = 'COM12'
-MY_TOKEN = 'CAACEdEose0cBAJp6NHHtISJDAZB3bcpilOzKaQxXcPYmuN7UYFHxX6d1aUbwjnueOlCX9doZBPjEuDUcpmpzvmeJsCmdlYcTDFx4oRG5lIcH7GL2ZAyiRjAsYkBY0eK599dA05ZA6ZACgXK2bYlZBeIEQtJ38fRpZCZCm5h3unhC102739ZAEg1uehGNhJzIeKQIZD'
-NAME_FRIEND = 'wilian.padilha.7'
+ARDUINO_PORT = ''#serial port
+MY_TOKEN = ''
+NAME_FRIEND = ''
 
 board = Arduino(ARDUINO_PORT)
 fb = facebook(MY_TOKEN)
