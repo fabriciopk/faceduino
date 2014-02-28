@@ -8,8 +8,8 @@ Faceduino is a Python interface for connect facebook to arduino.
 Installation
 ============
 
-If you install from source with ``python setup.py install``, don't forget to
-install `pyserial`_ as well.::
+If you install from source with "python setup.py install", don't forget to
+install 'pyserial'.
 
     git clone https://github.com/fabriciopk/faceduino
     cd faceduino
@@ -19,7 +19,14 @@ install `pyserial`_ as well.::
 Usage
 =====
 
---> In construction
+	board = Arduino(ARDUINO_PORT)
+	fb = facebook(MY_TOKEN)
+	print fb.fetchStatus(NAME_FRIEND)
+	if (fb.fetchStatus(NAME_FRIEND)=='active'):
+		board.blink(13)
+		board.buzzer(22)
+		board.delay(2)
+
 
 Todo
 ====
