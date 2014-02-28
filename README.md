@@ -8,8 +8,6 @@ Faceduino is a Python interface for connect facebook to arduino.
 Installation
 ============
 
-The preferred way to install is with pip_::
-
 If you install from source with ``python setup.py install``, don't forget to
 install `pyserial`_ as well.::
 
