@@ -58,6 +58,13 @@ class Arduino(object):
     def buzzer(self, pin):
         self.__sendData('5')
         self.__sendData(pin)
+    def blink(self, pin):
+        self.output([pin])
+        for i in range(20):
+            self.setHigh(pin)
+            time.sleep(1)
+            self.setLow(pin)
+            time.sleep(1)
     def setHigh(self, pin):
         self.__sendData('1')
         self.__sendData(pin)
@@ -97,7 +104,8 @@ class Arduino(object):
             return True
         else:
             return False
-
+    def delay(self,secs):
+        time.sleep(secs)
     def close(self):
         self.serial.close()
         return True
