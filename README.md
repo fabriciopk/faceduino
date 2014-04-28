@@ -19,7 +19,8 @@ install 'pyserial'.
 Usage
 =====
 - Set MY_TOKEN, a facebook token (https://developers.facebook.com/tools/explorer/)
-- Set Arduino COM port
+- Set Arduino COM port.
+
 	board = Arduino(ARDUINO_PORT)
 	fb = facebook(MY_TOKEN)
 	print fb.fetchStatus(NAME_FRIEND)
