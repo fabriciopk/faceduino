@@ -18,16 +18,16 @@ install 'pyserial'.
 
 Usage
 =====
-- Set MY_TOKEN, a facebook token (https://developers.facebook.com/tools/explorer/)
+- Get a facebook token on (https://developers.facebook.com/tools/explorer/) and set the variable MY_TOKEN.
 - Set Arduino COM port.
 
-	board = Arduino(ARDUINO_PORT)
-	fb = facebook(MY_TOKEN)
-	print fb.fetchStatus(NAME_FRIEND)
-	if (fb.fetchStatus(NAME_FRIEND)=='active'):
-		board.blink(13)
-		board.buzzer(22)
-		board.delay(2)
+		board = Arduino(ARDUINO_PORT)
+		fb = facebook(MY_TOKEN)
+		print fb.fetchStatus(NAME_FRIEND)
+		if (fb.fetchStatus(NAME_FRIEND)=='active'):
+			board.blink(13)
+			board.buzzer(22)
+			board.delay(2)
 
 
 Todo
